@@ -1,0 +1,18 @@
+//Scripting Goes here
+
+
+//#PowerShell example for backing up a folder
+$source = "C:\SpecificFolder"
+$destination = "\NetworkDrive\Backups\SpecificFolder"
+Copy-Item -Path $source -Destination $destination -Recurse -Force
+
+
+//Automated Windows Software Update script example:
+#Function to check for Windows updates
+Write-Host "Checking for Windows updates..."
+Install-Module PSWindowsUpdate -Force -AllowClobber
+Import-Module PSWindowsUpdate
+#Check for and install Windows Updates with Reboot
+Get-WindowsUpdate -AcceptAll -Install -AutoReboot
+
+
