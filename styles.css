@@ -1,7 +1,27 @@
+
+/* Styles for large overarching Areas */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #378039;
+    background-image: linear-gradient(to right, #378039 , #333);
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    align-items: center;
+    padding: 10px 70px;
 }
 
 body {
@@ -9,38 +29,49 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding-top: 0px;
+}
+
+footer {
+    background-color: #333;
+    background-image: linear-gradient(to right, #161616, #353535);
+    color: gray;
+    text-align: left;
+    padding: 1.5rem;
+    padding-left: 3rem;
+    margin-top: 2rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Wrapper and Container Styles */
+
+.wrapper {
+    margin: auto;  
 }
 
 .container {
-    width: 80%;
+    width: 60%;
     margin: auto;
     overflow: hidden;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #4CAF50;
-    background-image: linear-gradient(to right, #4CAF50 , #333);
-    display: flex;
-    justify-content: space-between;
-    z-index: 100;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #333;
-    align-items: center;
-    padding: 10px 70px;
-}
-
-main {
-    padding-top: 65px;
-}
-
 .intro {
     padding: 2rem 0;
-    text-align: center;
+    text-align: left;
 }
 
 .intro h2 {
@@ -52,6 +83,13 @@ main {
     margin-bottom: 2rem;
     font-size: 1.1rem;
 }
+
+.download-section {
+    padding: 2rem 0;
+    text-align: left;
+}
+
+/* Styles for Buttons */
 
 .btn {
     display: inline-block;
@@ -72,42 +110,25 @@ main {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1.1rem;
-    background-color: #307033;
     color: white;
     text-decoration: none;
     border-radius: 3px;
     transition: background-color 0.3s;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 .navbtn:hover {
     background-color: #45a049;
 }
 
+/* Spoiler Styles */
+
+
+
+/* Other Nav Styles */
+
 .navone a {
     padding-left: 20px;
 }
 
 
-.download-section {
-    padding: 2rem 0;
-    background-color: #fff;
-    text-align: center;
-}
-
-footer {
-    background-color: #333;
-    background-image: linear-gradient(to right, #161616, #353535);
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-footer p {
-    font-size: 0.9rem;
-}
