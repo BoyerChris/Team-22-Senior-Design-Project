@@ -64,11 +64,17 @@ footer p {
     margin: auto;
     overflow: hidden;
     text-align: left;
+    text-align: center;
 }
 
 .wrapper p {
     margin-bottom: 2rem;
     font-size: 1.1rem;
+    text-align: left;
+}
+
+.wrapper ul {
+    text-align: left;
 }
 
 .wrapper h2 {
@@ -221,6 +227,124 @@ footer p {
     font-size: 1.1rem;
 }
 
+
+/* Spoiler styles & special tools page wrappers */
+
+.detspoil {
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    font-weight: bold;
+
+}
+
+.wrapperdivfour {
+    width: 100%;                    
+    padding: 25px;
+    text-align: center;
+    box-sizing: border-box;  
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); 
+    margin: 10px; 
+    background-color: #fff;
+    min-height: 450px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.srtbtn {
+    display: inline-block;
+    padding: 10px 250px;
+    font-size: 1.1rem;
+    background-image: linear-gradient(to right, #8d8d8d, #353535);
+    background-color: #8d8d8d;
+    border: 3px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    margin: .5rem;
+}
+
+.vulbtn {
+    display: inline-block;
+    padding: 10px 250px;
+    font-size: 1.1rem;
+    background-image: linear-gradient(to right, #2900dd, #353535);
+    background-color: #2900dd;
+    border: 3px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    margin: .5rem;
+}
+
+.genbtn {
+    display: inline-block;
+    padding: 10px 250px;
+    font-size: 1.1rem;
+    background-image: linear-gradient(to right, #00cc33, #353535);
+    background-color: #00cc33;
+    border: 3px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    margin: .5rem;
+}
+
+.bnkbtn {
+    display: inline-block;
+    padding: 10px 250px;
+    font-size: 1.1rem;
+    background-image: linear-gradient(to right, #0052cc, #353535);
+    background-color: #0052cc;
+    border: 3px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    margin: .5rem;
+}
+
+.insbtn {
+    display: inline-block;
+    padding: 10px 250px;
+    font-size: 1.1rem;
+    background-image: linear-gradient(to right, #39c502, #353535);
+    background-color: #39c502;
+    border: 3px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    margin: .5rem;
+}
+
+.hltbtn {
+    display: inline-block;
+    padding: 10px 250px;
+    font-size: 1.1rem;
+    background-image: linear-gradient(to right, #00976a, #353535);
+    background-color: #00976a;
+    border: 3px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    margin: .5rem;
+}
+
 /* Styles for Buttons */
 
 .btn {
@@ -275,4 +399,3 @@ footer p {
     padding-left: 20px;
 }
 
-/* Spoiler Styles */
