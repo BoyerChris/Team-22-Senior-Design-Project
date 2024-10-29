@@ -57,36 +57,168 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* Wrapper and Container Styles */
+/* General Wrapper and Container Styles */
+
 
 .wrapper {
-    margin: auto;  
-}
-
-.container {
-    width: 60%;
     margin: auto;
     overflow: hidden;
-}
-
-.intro {
-    padding: 2rem 0;
     text-align: left;
 }
 
-.intro h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-.intro p {
+.wrapper p {
     margin-bottom: 2rem;
     font-size: 1.1rem;
 }
 
-.download-section {
+.wrapper h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    overflow: hidden;
+    width: 60%;
     padding: 2rem 0;
+}
+
+/* Special Wrappers for index.html */
+
+.introwrapper {
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    padding: .5rem 0;
+    width: 100%;
+    background-image: url("Images/background1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    float: relative;
+    border: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 5rem;
+}
+
+.wrapperwrapper {
+    background-color: rgba(255,255,255,0.7);
+    width: 50%;
+    padding: 2.3rem;
+}
+
+.introcontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;           
+    flex-wrap: wrap;    
+    padding-top: 25px;  
+    padding-bottom: 25px;        
+}
+
+.wrapperdiv {
+    width: 25%;                    
+    padding: 25px;
+    text-align: center;
+    box-sizing: border-box;  
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin: 10px; 
+    background-color: #fff;
+    min-height: 350px;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.wrapperdiv h2 {
+    text-align: center;
+}
+
+.wrapperdiv p {
     text-align: left;
+}
+
+/* Special Wrappers for contact.html */
+
+.wrapperdivtwo {
+    width: 15%;                    
+    padding: 25px;
+    text-align: center;
+    box-sizing: border-box;  
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin: 10px; 
+    background-color: #fff;
+    min-height: 350px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain; 
+}
+
+/* Special Wrappers for pricing.html */
+
+.wrapperdivthree {
+    width: 30%;                    
+    padding: 25px;
+    text-align: center;
+    box-sizing: border-box;  
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin: 10px; 
+    background-color: #fff;
+    min-height: 450px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.wrapperdivthree h1 {
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+.wrapperdivthree p {
+    font-size: 165px;
+    font-weight: lighter;
+}
+
+.pricingcontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;           
+    flex-wrap: wrap;    
+    padding-top: 25px;  
+    padding-bottom: 90px;        
+}
+
+/* Special Wrappers for demo.html */
+
+.demolist {
+    list-style: disc;
+    padding-left: 50px;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
 }
 
 /* Styles for Buttons */
@@ -121,9 +253,21 @@ footer p {
     background-color: #45a049;
 }
 
-/* Spoiler Styles */
+.demobtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 
+}
 
+.demobtn:hover {
+    background-color: #45a049;
+}
 
 /* Other Nav Styles */
 
@@ -131,4 +275,4 @@ footer p {
     padding-left: 20px;
 }
 
-
+/* Spoiler Styles */

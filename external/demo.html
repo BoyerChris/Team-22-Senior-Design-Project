@@ -22,13 +22,32 @@
 
     
     <main>
-        <div>
-            <h2>Demo</h2>
-            <p>Click the button below to download the latest version of one of our demos. Once downloaded, run the script to check your system's port settings.</p>
-            <a href="external/demo.html" class="btn" download>Explore Demo Page</a>
-        </div>
+        <section class="container">
+            <div class="wrapper">
+                <h2>Demo</h2>
+                <p>Welcome to our solution demo! Below, you'll find one of our first tools: the Port Scanner. This tool scans your system for open ports and alerts you if any potentially risky ports are exposed. This is to help ensure that no unintended ports are left open on your network, and if there are any you can quickly remedy it. A list of some of the most common ports that can pose a security risk when open to the internet are:</p>
+                <ul class="demolist">
+                    <li>Port 20 & 21 - FTP</li>
+                    <li>Port 22 - SSH</li>
+                    <li>Port 23 - Telnet</li>
+                    <li>Port 53 - DNS</li>
+                    <li>Port 69 - TFTP</li>
+                    <li>Port 3389 - RDP</li>
+                </ul>
+                <p>Many of the ports listed above can be vulnerable to misuse, even if they have legitimate purposes. because of this it’s best practice to keep ports closed by default to enhance security. To help you identify open ports, the latest version of our Port Scanner is available to download using the button below. It will scan for the listed ports and more, checking your system for open ports. To start, click the button below!</p>
+                <a href="demo.html" class= "demobtn">Download the Scanner</a> <br><br>
+                <p>To run the program, after clicking the button, simply click on the download notification in the top-right corner of your browser. If you don’t see it there, navigate to your browser's downloads section, right-click on the program, and then select 'Run.' The program will start immediately, and within a few moments, you’ll see the results of the scan.</p>
+                <p>If no issues are detected, congratulations—your system is secure! However, if any open ports are found, the results will indicate which ports are open. In that case, we recommend taking immediate action to close those ports and enhance your system’s security.</p>
+            </div>
+        </section>
     </main>
 
+    <footer>
+        <h3>Check-The-List</h3>
+        <p>© 2024  Senior Design Group 22 All rights reserved</p>
+        <br>
+        <p>This website was created by the 2024-2025 Senior Design Group 22. Major contributors include Chris Boyer, Andrew Meyer, Sunheng Nguon, Elisha Stanilevich, and Ahmed Ubdullah.</p>
+    </footer>
 
 </body>
 </html>
