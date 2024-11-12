@@ -154,6 +154,26 @@ footer p {
 
 /* Special Wrappers for contact.html */
 
+.wrapperdivdemo {                   
+    padding: 25px;
+    text-align: center;
+    box-sizing: border-box;  
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin: 10px; 
+    background-color: #fff;
+    min-height: 350px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+/* Special Wrappers for contact.html */
+
 .wrapperdivtwo {
     width: 15%;                    
     padding: 25px;
