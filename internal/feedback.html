@@ -23,10 +23,70 @@
     
     <main>
         <section class="container">
-            <h3>This is a feedback page</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ea fuga magnam odio est, iure assumenda nulla, hic enim dolor aliquam error omnis molestias sequi, eos odit expedita dolores ad.</p>
+            <div class="wrapper">
+                <div class="wrapperdivfeedback">
+                    <h1> Feedback Survey </h1> <br>
+
+
+
+                    <form action="submit_feedback.php" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                
+                        <br><br><h2>Please rate the following (1 - Poor, 5 - Excellent)</h2><br>
+                
+                        <label>Quality of Website:</label>
+                        <div class="rating-group">
+                            <label><input type="radio" name="quality" value="1" required> 1</label>
+                            <label><input type="radio" name="quality" value="2"> 2</label>
+                            <label><input type="radio" name="quality" value="3"> 3</label>
+                            <label><input type="radio" name="quality" value="4"> 4</label>
+                            <label><input type="radio" name="quality" value="5"> 5</label>
+                        </div>
+            
+                        <label>Quality of Tools:</label>
+                        <div class="rating-group">
+                            <label><input type="radio" name="speed" value="1" required> 1</label>
+                            <label><input type="radio" name="speed" value="2"> 2</label>
+                            <label><input type="radio" name="speed" value="3"> 3</label>
+                            <label><input type="radio" name="speed" value="4"> 4</label>
+                            <label><input type="radio" name="speed" value="5"> 5</label>
+                        </div>
+            
+                        <label>Overall Satisfaction:</label>
+                        <div class="rating-group">
+                            <label><input type="radio" name="satisfaction" value="1" required> 1</label>
+                            <label><input type="radio" name="satisfaction" value="2"> 2</label>
+                            <label><input type="radio" name="satisfaction" value="3"> 3</label>
+                            <label><input type="radio" name="satisfaction" value="4"> 4</label>
+                            <label><input type="radio" name="satisfaction" value="5"> 5</label>
+                        </div> 
+
+                        <br><br>
+            
+                
+                        <label for="comments">Additional Comments or Questions:</label><br>
+                        <textarea id="comments" name="comments" rows="10" placeholder="Your comments here..."></textarea><br><br>
+                
+                        <button type="reset" >Submit Feedback</button>
+                    </form>
+
+
+
+                </div>
+            </div>    
         </section>
     </main>
+
+    <footer>
+        <h3>Check-The-List</h3>
+        <p>© 2024  Senior Design Group 22 All rights reserved</p>
+        <br>
+        <p>This website was created by the 2024-2025 Senior Design Group 22. Major contributors include Chris Boyer, Andrew Meyer, Sunheng Nguon, Elisha Stanilevich, and Ahmed Ubdullah.</p>
+    </footer>
 
 
 </body>
