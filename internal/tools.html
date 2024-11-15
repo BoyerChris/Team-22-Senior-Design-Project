@@ -32,7 +32,7 @@
             <div class="wrapperdivfour">
             <details class="detspoil" open>
                 <summary>Vulnerability Scanners</summary>
-                <a href="../scripts&tools/Simpleportscanner.exe" class="vulbtn" download>Simple Port Scanner</a> <br>
+                <a href="#" onclick="openModal('Simple Port Scanner', 'This is a simple port scanning tool.', '../scripts&tools/Simpleportscanner.exe')" class="vulbtn">Simple Port Scanner</a> <br>
                 <a href="placeholder.html" class="vulbtn">N/A</a> <br>
                 <a href="placeholder.html" class="vulbtn">N/A</a> <br>
                 <a href="placeholder.html" class="vulbtn">N/A</a> <br>
@@ -74,6 +74,16 @@
         <br>
         <p>This website was created by the 2024-2025 Senior Design Group 22. Major contributors include Chris Boyer, Andrew Meyer, Sunheng Nguon, Elisha Stanilevich, and Ahmed Ubdullah.</p>
     </footer>
+
+<!-- Modal Structure -->
+<div id="scriptModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="scriptTitle"></h2>
+        <p id="scriptDescription"></p>
+        <button id="downloadButton">Download Script</button>
+    </div>
+</div>
 
 </body>
 </html>
