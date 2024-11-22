@@ -277,7 +277,7 @@ footer p {
 .wrapperdivfour {
     width: 100%;                    
     padding: 25px;
-    text-align: center;
+    text-align: left;
     box-sizing: border-box;  
     border: 2px solid #cfcfcf;
     border-radius: 6px; 
@@ -289,7 +289,7 @@ footer p {
     display: flex;
     flex-direction: column; 
     justify-content: space-between; 
-    align-items: center;
+    align-items: left;
 }
 
 .srtbtn {
@@ -311,76 +311,19 @@ footer p {
     display: inline-block;
     padding: 10px 250px;
     font-size: 1.1rem;
-    background-image: linear-gradient(to right, #2900dd, #353535);
-    background-color: #2900dd;
-    border: 3px solid #000000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.3s;
-    margin: .5rem;
-}
-
-.genbtn {
-    display: inline-block;
-    padding: 10px 250px;
-    font-size: 1.1rem;
     background-image: linear-gradient(to right, #00cc33, #353535);
     background-color: #00cc33;
-    border: 3px solid #000000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    border: 1px solid #008b23;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
     color: white;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 10px;
     transition: background-color 0.3s;
     margin: .5rem;
+    width: 80%;
+    font-family: sans-serif;
 }
 
-.bnkbtn {
-    display: inline-block;
-    padding: 10px 250px;
-    font-size: 1.1rem;
-    background-image: linear-gradient(to right, #0052cc, #353535);
-    background-color: #0052cc;
-    border: 3px solid #000000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.3s;
-    margin: .5rem;
-}
-
-.insbtn {
-    display: inline-block;
-    padding: 10px 250px;
-    font-size: 1.1rem;
-    background-image: linear-gradient(to right, #39c502, #353535);
-    background-color: #39c502;
-    border: 3px solid #000000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.3s;
-    margin: .5rem;
-}
-
-.hltbtn {
-    display: inline-block;
-    padding: 10px 250px;
-    font-size: 1.1rem;
-    background-image: linear-gradient(to right, #00976a, #353535);
-    background-color: #00976a;
-    border: 3px solid #000000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.3s;
-    margin: .5rem;
-}
 
 /* Styles for Buttons */
 
