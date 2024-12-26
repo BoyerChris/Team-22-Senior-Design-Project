@@ -37,6 +37,14 @@
                 <a href="placeholder.html" class="vulbtn">Baseline Security Scanner</a> <br>
                 <a href="placeholder.html" class="vulbtn">Hardware Software Scanner</a> <br>
                 <a href="placeholder.html" class="vulbtn">Sensitive Data Scanner</a> <br>
+                <button class="popup" onclick="togglePopup()">Popup test</button>
+                <!-- Hidden Popup Container -->
+                 <div id ="popup" style="display: none;">
+                    <h2>Popup content</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button onclick="togglePopup()">&times;</button>
+                 </div>
+
             </details>
             <details class="detspoil">
                 <summary>Banking Specific</summary>
@@ -84,6 +92,6 @@
         <button id="downloadButton">Download Script</button>
     </div>
 </div>
-
+<script src="../scripts.js"></script>
 </body>
 </html>
