@@ -89,6 +89,32 @@ footer p {
     width: 60%;
     padding: 2rem 0;
 }
+/* Special Wrappers for login.html */
+.loginwrapper {
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    padding: .5rem 0;
+    width: 100%;
+    background-image: url("Images/background1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    float: relative;
+    border: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 5rem;
+}
+
+.loginwrapperwrapper {
+    background-color: rgba(255,255,255,1);
+    width: 30%;
+    padding: 2.3rem;
+}
+
 
 /* Special Wrappers for index.html */
 
@@ -112,7 +138,7 @@ footer p {
 }
 
 .wrapperwrapper {
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.85);
     width: 50%;
     padding: 2.3rem;
 }
