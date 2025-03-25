@@ -89,6 +89,32 @@ footer p {
     width: 60%;
     padding: 2rem 0;
 }
+/* Special Wrappers for login.html */
+.loginwrapper {
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    padding: .5rem 0;
+    width: 100%;
+    background-image: url("Images/background1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    float: relative;
+    border: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 5rem;
+}
+
+.loginwrapperwrapper {
+    background-color: rgba(255,255,255,1);
+    width: 30%;
+    padding: 2.3rem;
+}
+
 
 /* Special Wrappers for index.html */
 
@@ -112,7 +138,7 @@ footer p {
 }
 
 .wrapperwrapper {
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.85);
     width: 50%;
     padding: 2.3rem;
 }
@@ -510,35 +536,47 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 400px;
-    background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    /* max-width: 600px; */
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #200; /* popup container border */ 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     z-index: 1000; /* Ensures the popup is above other content */
 }
 
+#popup
+ p { /* Popup paragraph style */
+    text-align: left;
+    margin: 10px 0; /* Optional: Adds spacing between paragraphs */
+    line-height: 1.6; /* Optional: Improves readability */
+}
+
 /* Close button inside popup */
 #popup button {
     position:absolute;
-    right:20px;
-    top:20px;
-    width:30px;
-    height:30px;
+    right:15px;
+    top:15px;
+    width:35px;
+    height:35px;
     background:#222;
     color:#fff;
-    font-size:25px;
-    font-weight:600;
-    line-height:30px;
-    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    line-height:35px;
+    text-align:center; 
     border-radius:50%;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 #popup button:hover {
-    background-color: #695957;
+    background-color: #444;
+    transform: scale(1.1);
 }
 
 /* Overlay background */
@@ -549,6 +587,6 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+   /* background-color: rgba(0, 0, 0, 0.5); */
     z-index: -1; /* Positioned behind the popup */
 }
