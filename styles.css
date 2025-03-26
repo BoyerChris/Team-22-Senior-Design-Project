@@ -497,7 +497,7 @@ button {
 }
 
 /* Popup button Styling */
-.popup {
+.popup-button {
     display: inline-block;
     padding: 10px 250px;
     font-size: 1.1rem;
@@ -516,21 +516,18 @@ button {
 
 /* Popup button Styling */
 .content {
-    position:abolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
     background: #fff;
-    width:450px;
+    width: 450px;
     height: 220px;
-    z-index:2;
-    text-align:center;
-    padding:20px;
-    box-sizing:border-box;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
+
 /* Popup container */
-#popup {
+.popup {
     display: none;
     position: fixed;
     top: 50%;
@@ -548,7 +545,7 @@ button {
     z-index: 1000; /* Ensures the popup is above other content */
 }
 
-#popup
+.popup
  p { /* Popup paragraph style */
     text-align: left;
     margin: 10px 0; /* Optional: Adds spacing between paragraphs */
@@ -556,7 +553,7 @@ button {
 }
 
 /* Close button inside popup */
-#popup button {
+.popup button {
     position:absolute;
     right:15px;
     top:15px;
@@ -574,13 +571,13 @@ button {
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
-#popup button:hover {
+.popup button:hover {
     background-color: #444;
     transform: scale(1.1);
 }
 
 /* Overlay background */
-#popup::before {
+.popup::before {
     content: "";
     position: fixed;
     top: 0;
