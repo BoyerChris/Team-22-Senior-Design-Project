@@ -89,6 +89,14 @@ footer p {
     width: 60%;
     padding: 2rem 0;
 }
+
+.toolcontainer {
+    margin: auto;
+    overflow: visible;
+    width: 60%;
+    padding: 2rem 0;
+}
+
 /* Special Wrappers for login.html */
 .loginwrapper {
     margin: auto;
@@ -496,10 +504,15 @@ button {
     cursor: pointer;
 }
 
-/* Popup button Styling */
+
+
+/* Popup Styling */
+
+
+
 .popup-button {
     display: inline-block;
-    padding: 10px 250px;
+    padding: px 250px;
     font-size: 1.1rem;
     background-image: linear-gradient(to right, #00cc33, #353535);
     background-color: #00cc33;
@@ -509,12 +522,11 @@ button {
     text-decoration: none;
     border-radius: 10px;
     transition: background-color 0.3s;
-    margin: .5rem;
+    margin: .6rem;
     width: 80%;
     font-family: sans-serif;
 }
 
-/* Popup button Styling */
 .content {
     background: #fff;
     width: 450px;
@@ -526,6 +538,19 @@ button {
 }
 
 
+.headed {
+    background-color: #41af44;
+    background-image: linear-gradient(to right, #41af44 , #333);
+    border: 2px solid #cfcfcf; /* popup container border */ 
+    border-radius: 6px; 
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.headed h2 {
+    color: #ffffff;
+}
+
+
 /* Popup container */
 .popup {
     display: none;
@@ -534,41 +559,55 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    /* max-width: 600px; */
+    min-height: 80vh;
     height: auto;
-    background-color: #fff;
-    border: 1px solid #200; /* popup container border */ 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    /* max-width: 600px; */
+    background-color: #ffffff;
+    border: 2px solid #cfcfcf; /* popup container border */ 
+    border-radius: 6px; 
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); 
     padding: 20px;
     text-align: center;
-    border-radius: 10px;
     z-index: 1000; /* Ensures the popup is above other content */
 }
 
-.popup
- p { /* Popup paragraph style */
+.popup p { /* Popup paragraph style */
     text-align: left;
     margin: 10px 0; /* Optional: Adds spacing between paragraphs */
     line-height: 1.6; /* Optional: Improves readability */
+    font-size: 20px;
+    font-weight: lighter;
 }
+
+.popup h3 {
+    text-align: left;
+    margin: 10px 0; /* Optional: Adds spacing between paragraphs */
+    line-height: 1.6; /* Optional: Improves readability */
+    font-size: 24px;
+    font-weight: Bold;
+}
+
+
 
 /* Close button inside popup */
 .popup button {
-    position:absolute;
-    right:15px;
-    top:15px;
-    width:35px;
-    height:35px;
-    background:#222;
-    color:#fff;
-    font-size:30px;
-    font-weight:bold;
-    line-height:35px;
-    text-align:center; 
-    border-radius:50%;
-    border: none;
-    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 21px;
+    width: 50px;
+    height: 50px;
+    background: #c70000;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    border: 2px solid #5e5e5e7e; /* popup container border */ 
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     transition: background 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
 }
 
 .popup button:hover {

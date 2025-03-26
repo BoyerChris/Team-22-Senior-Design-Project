@@ -22,7 +22,7 @@
 
     
     <main>
-        <section class="container">
+        <section class="toolcontainer">
             <div class="wrapper"> 
                 <h2>Explore Our Tools</h2>
                 <a href="placeholder.html" class="srtbtn">Start Here!</a> <br><br>
@@ -30,111 +30,166 @@
 
 
             <div class="wrapperdivfour">
-            <details class="detspoil" open>
-                <summary>General Vulnerability Scanners</summary>
-                <!-- <a href="#" onclick="openModal('Simple Port Scanner', 'This is a simple port scanning tool.', '../scripts&tools/Simpleportscanner.exe')" class="vulbtn">Port Scanner</a> <br> -->
-               
-                
-
-                <!-- <a href="placeholder.html" class="vulbtn">Hardware Software Scanner</a> <br>
-                <a href="placeholder.html" class="vulbtn">Sensitive Data Scanner</a> <br> -->
-                <!-- Trigger Buttons -->
-                <button class="popup-button" data-popup="popup1">Patch Scanner</button>
-                <button class="popup-button" data-popup="popup2">Backup Scanner</button>
-                <button class="popup-button" data-popup="popup3">Open Port Scanner</button>
-                <button class="popup-button" data-popup="popup4">Password Checker</button>
-                <button class="popup-button" data-popup="popup5">Baseline Security Check Scanner</button>
-                <button class="popup-button" data-popup="popup6">Brute Force Attempt Scanner</button>
-                <button class="popup-button" data-popup="popup7">Network Adapter Scanner</button>
+                <details class="detspoil" open>
+                    <summary>Computer Vulnerability Scanners</summary>
+                    <!-- Trigger Buttons -->
+                    <button class="popup-button" data-popup="popup1">Patch Scanner</button>
+                    <button class="popup-button" data-popup="popup2">Backup Scanner</button>
+                    <button class="popup-button" data-popup="popup4">Password Scanner</button>
+                    <button class="popup-button" data-popup="popup5">Baseline Scanner</button>
+    
 
                     <!-- Popup 1 -->
                     <div id="popup1" class="popup">
-                        <button class="close-btn" onclick="closePopup('popup1')">&times;</button>
-                        <h2>Patch Scanner</h2>
+                        <div class="headed">
+                            <button class="close-btn" onclick="closePopup('popup1')">&times;</button>
+                            <h2>Patch Scanner</h2>
+                        </div>
+
+                        <h3>What is a Patch Scanner?</h3>
                         <p>This script is designed to check for missing updates on a Windows system, it does this by utilizing already built-in Windows features.
                             It scans for Windows security updates, cumulative patches, and third-party software updates.
                              If updates are found, they are displayed and categorized respectively, ensuring clear identification of required patches.
                               The script runs only with administrative privileges to ensure proper access to update information</p> <br>
                         
+                        <h3>How it Works</h3>
                         <p> Upon detection of missing updates, the script generates a detailed report listing all pending patches. 
-                            The results are saved in a folder that is created in your C Drive for reference. 
+                            The results are saved in a folder that is created in your C: Drive for reference. 
                             If no updates are found, the script confirms that the system is fully updated. 
-                            The tool is useful for maintaining system security by ensuring critical updates are applied in a timely manner.</p>
-                        
+                            The tool is useful for maintaining system security by ensuring critical updates are applied in a timely manner.</p> <br><br><br><br>
+                            
+                            <a href="../scripts&tools/elisha_updatepatch_scanner.ps1" class="demobtn" download>Download</a> <br>
                     </div>
 
                     <!-- Popup 2 -->
                     <div id="popup2" class="popup">
-                        <button class="close-btn" onclick="closePopup('popup2')">&times;</button>
-                        <h2>Backup Scanner</h2>
+                        <div class="headed">
+                            <button class="close-btn" onclick="closePopup('popup2')">&times;</button>
+                            <h2>Backup Scanner</h2>
+                        </div>
+
+                        <h3>What is a Backup Scanner?</h3>
                         <p>This script checks the system's backup readiness by verifying the status of File History and System Restore.
                              It ensures that File History, which provides continuous file backups, is enabled, and checks for the availability of System Restore points. 
-                             If either feature is disabled, the script notifies the user and suggests enabling them for added protection. <br>
-                            The results are displayed and then stored in a newly created folder on your C drive. 
+                             If either feature is disabled, the script notifies the user and suggests enabling them for added protection. </p><br>
+
+                        <h3>How it Works</h3> 
+                        <p> The results are displayed and then stored in a newly created folder on your C drive. 
                             This allows users to review their backup settings and take corrective action if needed. 
                             The script must be run as an administrator to access system settings properly. 
                             By using this tool, users can quickly determine if their system has adequate recovery options in place, reducing the risk of data loss 
-                            in case of system failure</p>
+                            in case of system failure</p> <br><br><br><br>
+
+                            <a href="../scripts&tools/elisha_backupchecker.exe" class="demobtn" download>Download</a> <br>
                     </div>
 
-                    <!-- Popup 3 -->
-                    <div id="popup3" class="popup">
-                        <button class="close-btn" onclick="closePopup('popup3')">&times;</button>
-                        <h2>Open Port Scanner</h2>
-                        <p>This script scans your system searching for ports that have been left open, such as FTP, SSH, HTTP, and RDP. 
-                            It systematically attempts to establish a connection with each port and reports whether it is open or closed. 
-                            If a port is open, the script confirms connectivity and then closes the connection. <br>
-                         The tool is useful for identifying accessible services on a system, which can help with security assessments and network 
-                            troubleshooting. The scan results are displayed in real-time, showing the status of each port.</p>
-                    </div>
                     <!-- Popup 4 -->
                     <div id="popup4" class="popup">
-                        <button class="close-btn" onclick="closePopup('popup4')">&times;</button>
-                        <h2>Password Checker</h2>
+                        <div class="headed">   
+                            <button class="close-btn" onclick="closePopup('popup4')">&times;</button>
+                            <h2>Password Scanner</h2>
+                        </div>   
+
+                        <h3>What is a Password Scanner?</h3>
                         <p>This script evaluates the local security policies related to password management on a Windows system.
                              It retrieves and displays key password security settings, including minimum password length, maximum password age,
-                              password complexity requirements, and account lockout thresholds. <br> It analyzes these settings and provides recommendations
+                              password complexity requirements, and account lockout thresholds. </p><br> 
+                        
+                        <h3>How it Works</h3>      
+                        <p> The scanner analyzes these settings and provides recommendations
                                if weak policies are detected, such as enabling password complexity, setting a stronger minimum length, 
                                or enforcing password expiration. The results are displayed in a structured format, with security warnings highlighted
-                                in color for better visibility. <br> By using this tool, you can quickly assess and improve their system's password security policies,
-                                 reducing vulnerabilities related to weak authentication settings.</p>
+                                in color for better visibility. Using these outputs, you can quickly assess and improve their system's password security policies,
+                                 reducing vulnerabilities related to weak authentication settings.</p> <br><br><br><br>
+
+                                 <a href="../scripts&tools/Password Policy Checker.exe" class="demobtn" download>Download</a> <br>
                     </div>                    
                     <!-- Popup 5 -->
                     <div id="popup5" class="popup">
-                        <button class="close-btn" onclick="closePopup('popup5')">&times;</button>
-                        <h2>Baseline Security Check Scanner</h2>
-                        <p>This script automates security checks and exports findings to a CSV file.
-                            It checks if Remote Desktop Protocol (RDP) is enabled, a common attack vector, retrieves local user accounts
+                        <div class="headed">    
+                            <button class="close-btn" onclick="closePopup('popup5')">&times;</button>
+                            <h2>Baseline Scanner</h2>
+                        </div>   
+                         
+                        <h3>What is a Baseline Scanner?</h3>
+                        <p> This scanner helps prevent ransomware,
+                            breaches, and unauthorized access by identifying security gaps. It strengthens SMB security by automating checks, supports compliance with standards like NIST, 
+                            and enables proactive threat prevention. By scanning regularly, you can ensure the ongoing protection of your assets</p><br> 
+                        
+                        <h3>How it Works</h3>     
+                        <p>This scanner automates security checks and exports findings to a CSV file.
+                            It checks if Remote Desktop Protocol (RDP) is enabled, a common attack vector, and retrieves local user accounts
                             and password change dates to identify stale accounts and enforces rotation, and reviews firewall rules for 
-                            misconfigurations like "Allow All Traffic." <br> By identifying security gaps, this tool helps prevent ransomware,
-                            breaches, and unauthorized access. It strengthens SMB security by automating checks, supports compliance with standards like NIST, 
-                            and enables proactive threat prevention. Regular scans ensure ongoing protection</p>
+                            misconfigurations like "Allow All Traffic." </p> <br><br><br><br>
+
+                            <a href="../scripts&tools/Baseline Security Check.exe" class="demobtn" download>Download</a> <br>
+                </details>
+    
+                <details class="detspoil" open>
+                    <summary>Network Vulnerability Scanners</summary>
+                    <!-- Trigger Buttons -->
+                    <button class="popup-button" data-popup="popup3">Port Scanner</button>
+                    <button class="popup-button" data-popup="popup6">Brute Force Scanner</button>
+                    <button class="popup-button" data-popup="popup7">Network Adapter Scanner</button>
+                    
+                    <!-- Popup 3 -->
+                    <div id="popup3" class="popup">
+                        <div class="headed">
+                            <button class="close-btn" onclick="closePopup('popup3')">&times;</button>
+                            <h2>Port Scanner</h2>
+                        </div>    
+                        
+                        <h3>What is a Port Scanner?</h3>
+                        <p>This script scans your system searching for ports that have been left open, such as FTP, SSH, HTTP, and RDP. 
+                            It systematically attempts to establish a connection with each port and reports whether it is open or closed. 
+                            If a port is open, the script confirms connectivity and then closes the connection. </p><br>
+
+                        <h3>How it Works</h3> 
+                        <p>The tool is useful for identifying accessible services on a system, which can help with security assessments and network 
+                            troubleshooting. The scan results are displayed in real-time, showing the status of each port.</p> <br><br><br><br>
+
+                            <a href="../scripts&tools/Openport Scanner.exe" class="demobtn" download>Download</a> <br>
                     </div>
+                    
                     <!-- Popup 6 -->
                     <div id="popup6" class="popup">
-                        <button class="close-btn" onclick="closePopup('popup6')">&times;</button>
-                        <h2>Brute Force Attempt Scanner</h2>
+                        <div class="headed">     
+                            <button class="close-btn" onclick="closePopup('popup6')">&times;</button>
+                            <h2>Brute Force Scanner</h2>
+                        </div>    
+
+                        <h3>What is a Brute Force Scanner?</h3>
                         <p>This script performs two key security checks. It scans for failed login attempts in the last 30 minutes, 
                             identifying potential brute-force attacks by tracking repeated failures per user. 
                             It also monitors active network connections, detecting suspicious or unknown IP addresses. 
-                            The script flags IPs with excessive connections, which could indicate an intrusion or system overload attempt.<br>
-                             This tool helps detect attacks early by spotting unusual login activity and monitoring network threats. 
-                             It improves situational awareness, allowing proactive actions like blocking suspicious IPs before an attack succeeds.</p>
+                            The script flags IPs with excessive connections, which could indicate an intrusion or system overload attempt.</p><br>
+
+                        <h3>How it Works</h3> 
+                        <p>This tool helps detect attacks early by spotting unusual login activity and monitoring network threats. 
+                             It improves situational awareness, allowing proactive actions like blocking suspicious IPs before an attack succeeds.</p> <br><br><br><br>
+
+                             <a href="../scripts&tools/BruteForceAttemptScanner.exe" class="demobtn" download>Download</a> <br>
                     </div>
                     <!-- Popup 7 -->
                     <div id="popup7" class="popup">
-                        <button class="close-btn" onclick="closePopup('popup7')">&times;</button>
-                        <h2>Network Adapter Scanner</h2>
+                        <div class="headed">     
+                            <button class="close-btn" onclick="closePopup('popup7')">&times;</button>
+                            <h2>Network Adapter Scanner</h2>
+                        </div>
+
+                        <h3>What is a Network Adapter Scanner?</h3>
                         <p>This script scans your systems network adapters for their NetBios and DNS configurations.
                              It retrieves and displays the aforementioned configurations for each adapter your system possesses, determining along the
-                              way if the configuration found was “Risky” or “Secure”. <br> This tool is useful for finding attack vectors resulting from 
+                              way if the configuration found was “Risky” or “Secure”. </p><br> 
+                    
+                        <h3>How it Works</h3>      
+                        <p> This scanner is useful for finding attack vectors resulting from 
                               poor network adapter configuration. Upon detection of a “Risky” setting, the end user should take note of the adapter 
                               affected by the misconfiguration, then if possible, disable the adapter until steps are taken to rectify the affected DNS or
-                               NetBios configuration.</p>
-                    </div>
+                               NetBios configuration.</p> <br><br><br><br>
 
-
-
+                               <a href="../scripts&tools/NetAdapter Scanner.exe" class="demobtn" download>Download</a> <br>
+                </details>
             </div>
         </section>
     </main>
