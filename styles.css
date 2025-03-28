@@ -1,61 +1,4 @@
 
-/* Styles for large overarching Areas */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #378039;
-    background-image: linear-gradient(to right, #378039 , #333);
-    display: flex;
-    justify-content: space-between;
-    z-index: 100;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-    align-items: center;
-    padding: 10px 70px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    padding-top: 0px;
-}
-
-footer {
-    background-color: #333;
-    background-image: linear-gradient(to right, #161616, #353535);
-    color: gray;
-    text-align: left;
-    padding: 1.5rem;
-    padding-left: 3rem;
-    margin-top: 2rem;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin-top: auto;
-}
-
-footer p {
-    font-size: 0.9rem;
-}
 
 /* General Wrapper and Container Styles */
 
@@ -186,6 +129,8 @@ footer p {
     text-align: left;
 }
 
+
+
 /* Special Wrappers for demo & FAQ */
 
 .wrapperdivdemo {                   
@@ -281,14 +226,9 @@ footer p {
     padding-bottom: 90px;        
 }
 
-/* Special Wrappers for demo.html */
 
-.demolist {
-    list-style: disc;
-    padding-left: 50px;
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-}
+
+
 
 
 /* Spoiler styles & special tools page wrappers */
@@ -374,43 +314,6 @@ footer p {
 
 .btn:hover {
     background-color: #45a049;
-}
-
-.navbtn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    color: white;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: background-color 0.3s;
-    font-weight: 500;
-}
-
-.navbtn:hover {
-    background-color: #45a049;
-}
-
-.demobtn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-
-}
-
-.demobtn:hover {
-    background-color: #45a049;
-}
-
-/* Other Nav Styles */
-
-.navone a {
-    padding-left: 20px;
 }
 
 /* Feedback & Survey Styles */
@@ -626,3 +529,494 @@ button {
    /* background-color: rgba(0, 0, 0, 0.5); */
     z-index: -1; /* Positioned behind the popup */
 }
+
+
+
+
+/* ------------------------------------- */
+/* ------------ General CSS ------------ */
+/* ------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding-top: 0px;
+}
+
+footer {
+    background-color: #333;
+    background-image: linear-gradient(to right, #161616, #353535);
+    color: gray;
+    text-align: left;
+    padding: 1.5rem;
+    padding-left: 3rem;
+    margin-top: 2rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+
+
+/* ------------------------------------- */
+/* --------- NavBar/Header CSS --------- */
+/* ------------------------------------- */
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #378039;
+    background-image: linear-gradient(to right, #378039 , #333);
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    align-items: center;
+    padding: 10px 70px;
+}
+
+
+
+.navbtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+.navbtn:hover {
+    background-color: #45a049;
+}
+
+.navone a {
+    padding-left: 20px;
+}
+
+
+
+/* ------------------------------------- */
+/* ----------- Index.html CSS ---------- */
+/* ------------------------------------- */
+
+.indexWrapperOne {
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    padding: .5rem 0;
+    width: 100%;
+    background-image: url("Images/background1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    float: relative;
+    border: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 5rem;
+}
+
+.indexWrapperTwo {
+    background-color: rgba(255,255,255,0.85);
+    width: 50%;
+    padding: 2.3rem;
+}
+
+.indexWrapperThree {
+    width: 25%;                    
+    padding: 25px;
+    text-align: center;
+    box-sizing: border-box;  
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin: 10px; 
+    background-color: #fff;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.indexWrapperThree h2 {
+    text-align: center;
+}
+
+.indexWrapperThree p {
+    text-align: left;
+}
+
+.indexContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;           
+    flex-wrap: wrap;    
+    padding-top: 25px;  
+    padding-bottom: 25px;   
+}
+
+.indexBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.indexBtn:hover {
+    background-color: #45a049;
+}
+
+
+
+/* ------------------------------------- */
+/* --------- Contact.html CSS ---------- */
+/* ------------------------------------- */
+
+.contactWrapperOne {
+    margin: auto;
+    overflow: hidden;
+    text-align: left;
+    text-align: center;
+}
+
+.contactWrapperOne p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.contactWrapperOne ul {
+    text-align: left;
+}
+
+.contactWrapperOne h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contactWrapperTwo {
+    width: 15%;                    
+    padding: 25px;
+    text-align: center;
+    box-sizing: border-box;  
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin: 10px; 
+    background-color: #fff;
+    min-height: 350px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.contactContainerOne {
+    margin: auto;
+    overflow: hidden;
+    width: 60%;
+    padding: 2rem 0;
+}
+
+.contactContainerTwo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;           
+    flex-wrap: wrap;    
+    padding-top: 25px;  
+    padding-bottom: 25px;   
+}
+
+.contactImage {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain; 
+}
+
+/* ------------------------------------- */
+/* ----------- Demo.html CSS ----------- */
+/* ------------------------------------- */
+
+.demoWrapperOne {
+    margin: auto;
+    overflow: hidden;
+    text-align: left;
+    text-align: center;
+}
+
+.demoWrapperOne p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.demoWrapperOne ul {
+    text-align: left;
+}
+
+.demoWrapperOne h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+.demoWrapperTwo {
+    padding: 25px;
+    text-align: center;
+    box-sizing: border-box;  
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin: 10px; 
+    background-color: #fff;
+    min-height: 350px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.demoWrapperTwo h1 {
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+.demoWrapperTwo h2 {
+    font-size: 23px;
+}
+
+
+
+.demoContainer {
+    margin: auto;
+    overflow: hidden;
+    width: 60%;
+    padding: 2rem 0;
+}
+
+.demolist {
+    list-style: disc;
+    padding-left: 50px;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.demobtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+}
+
+.demobtn:hover {
+    background-color: #45a049;
+}
+
+
+
+/* ------------------------------------- */
+/* --------- Pricing.html CSS ---------- */
+/* ------------------------------------- */
+
+.pricingWrapperOne {
+    margin: auto;
+    overflow: hidden;
+    text-align: left;
+    text-align: center;
+}
+
+.pricingWrapperOne p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.pricingWrapperOne ul {
+    text-align: left;
+}
+
+.pricingWrapperOne h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+.pricingWrapperTwo {
+    width: 30%;                    
+    padding: 25px;
+    text-align: center;
+    box-sizing: border-box;  
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin: 10px; 
+    background-color: #fff;
+    min-height: 450px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.pricingWrapperTwo h1 {
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+.pricingWrapperTwo p {
+    font-size: 165px;
+    font-weight: lighter;
+}
+
+
+
+.pricingContainerOne {
+    margin: auto;
+    overflow: hidden;
+    width: 60%;
+    padding: 2rem 0;
+}
+
+.pricingContainerTwo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;           
+    flex-wrap: wrap;    
+    padding-top: 25px;  
+    padding-bottom: 90px;  
+}
+
+
+
+.pricingDetailsSpoiler {
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+
+/* ------------------------------------- */
+/* ---------- Login.html CSS ----------- */
+/* ------------------------------------- */
+
+.loginWrapperOne {
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    padding: .5rem 0;
+    width: 100%;
+    background-image: url("Images/background1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    float: relative;
+    border: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 5rem;
+}
+
+
+.loginWrapperTwo {
+    background-color: rgba(255,255,255,1);
+    width: 30%;
+    padding: 2.3rem;
+}
+
+.loginBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.loginBtn:hover {
+    background-color: #45a049;
+}
+
+/* ------------------------------------- */
+/* ----------- Faq.html CSS ------------ */
+/* ------------------------------------- */
+
+
+
+
+/* ------------------------------------- */
+/* --------- Feedback.html CSS --------- */
+/* ------------------------------------- */
+
+
+
+
+/* ------------------------------------- */
+/* -------- Dashboard.html CSS --------- */
+/* ------------------------------------- */
+
+
+
+
+/* ------------------------------------- */
+/* ---------- Tools.html CSS ----------- */
+/* ------------------------------------- */
+
+
+
+
+/* ------------------------------------- */
+/* -------------- Misc CSS ------------- */
+/* ------------------------------------- */
