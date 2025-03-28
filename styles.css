@@ -1032,3 +1032,34 @@ button {
     height: 100%;
     z-index: -1; 
 }
+
+
+/* ------------------------------------- */
+/* ------- Dashboard Updates CSS ------- */
+/* ------------------------------------- */
+
+
+#recent-clicks li {
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    margin: .75rem;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #00cc33, #353535);
+    background-color: #00cc33;
+    width: 500px;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+
+#recent-clicks {
+    list-style: none;
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
