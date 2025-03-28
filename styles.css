@@ -104,7 +104,6 @@ header {
     background-size: cover;
     position: relative;
     float: relative;
-    border: 1px;
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -115,6 +114,8 @@ header {
     background-color: rgba(255,255,255,0.85);
     width: 50%;
     padding: 2.3rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .indexWrapperThree {
@@ -177,6 +178,12 @@ header {
     overflow: hidden;
     text-align: left;
     text-align: center;
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin: 10px; 
+    background-color: #fff;
+    padding: 25px;
 }
 
 .contactWrapperOne p {
@@ -187,6 +194,12 @@ header {
 
 .contactWrapperOne ul {
     text-align: left;
+}
+
+.contactWrapperOne h1 {
+    font-size: 45px;
+    font-weight: lighter;
+    text-align: center;
 }
 
 .contactWrapperOne h2 {
@@ -243,8 +256,8 @@ header {
 .demoWrapperOne {
     margin: auto;
     overflow: hidden;
-    text-align: left;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .demoWrapperOne p {
@@ -254,20 +267,44 @@ header {
 }
 
 .demoWrapperOne ul {
-    text-align: left;
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+}
+
+.demoWrapperOne li {
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    margin: .75rem;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #00cc33, #353535);
+    background-color: #00cc33;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+}
+
+.demoWrapperOne h1 {
+    font-size: 45px;
+    font-weight: lighter;
+    text-align: center;
 }
 
 .demoWrapperOne h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
     text-align: center;
+    font-size: 23px;
 }
 
 
 
 .demoWrapperTwo {
     padding: 25px;
-    text-align: center;
     box-sizing: border-box;  
     border: 2px solid #cfcfcf;
     border-radius: 6px; 
@@ -279,19 +316,7 @@ header {
     display: flex;
     flex-direction: column; 
     justify-content: space-between; 
-    align-items: center;
 }
-
-.demoWrapperTwo h1 {
-    font-size: 45px;
-    font-weight: lighter;
-}
-
-.demoWrapperTwo h2 {
-    font-size: 23px;
-}
-
-
 
 .demoContainer {
     margin: auto;
@@ -302,20 +327,25 @@ header {
 
 .demolist {
     list-style: disc;
-    padding-left: 50px;
     margin-bottom: 2rem;
     font-size: 1.1rem;
+    margin: 0 auto;
+    display: block;
 }
 
 .demoBtn {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.1rem;
+    padding: 10px 50px;
+    font-size: 2.2rem;
     background-color: #4CAF50;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+
 
 }
 
@@ -334,6 +364,12 @@ header {
     overflow: hidden;
     text-align: left;
     text-align: center;
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin: 10px; 
+    background-color: #fff;
+    padding: 25px;
 }
 
 .pricingWrapperOne p {
@@ -346,6 +382,11 @@ header {
     text-align: left;
 }
 
+.pricingWrapperOne h1 {
+    font-size: 45px;
+    font-weight: lighter;
+    text-align: center;
+}
 .pricingWrapperOne h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -658,6 +699,8 @@ textarea {
     background-color: rgba(255,255,255,0.85);
     width: 50%;
     padding: 2.3rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .homeWrapperThree {
@@ -753,6 +796,13 @@ textarea {
     overflow: hidden;
     text-align: left;
     text-align: center;
+    border: 2px solid #cfcfcf;
+    border-radius: 6px; 
+    margin: 10px; 
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 35px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .toolWrapperOne p {
@@ -765,9 +815,14 @@ textarea {
     text-align: left;
 }
 
+.toolWrapperOne h1 {
+    font-size: 45px;
+    font-weight: lighter;
+    text-align: center;
+}
+
 .toolWrapperOne h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 2.7rem;
     text-align: center;
 }
 
@@ -863,7 +918,6 @@ button {
 }
 
 
-
 /* Popup Styling */
 .popup-button {
     display: inline-block;
@@ -906,7 +960,6 @@ button {
 }
 
 
-
 /* Popup container */
 .popup {
     display: none;
@@ -941,7 +994,6 @@ button {
     font-size: 24px;
     font-weight: Bold;
 }
-
 
 
 /* Close button inside popup */
