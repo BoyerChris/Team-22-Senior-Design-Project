@@ -12,7 +12,7 @@
 <body>
     <header>Check-The-List - Cybersecurity Hardening
         <nav class="navone">
-            <a href="home.html" class="navbtn">Home</a>
+            <a href="home.html" class="navbtn">Dashboard</a>
             <a href="tools.html" class="navbtn">Tools</a>
             <a href="faq.html" class="navbtn">FAQ</a>
             <a href="feedback.html" class="navbtn">Feedback</a>
@@ -22,15 +22,30 @@
 
     
     <main>
-        <section class="toolcontainer">
-            <div class="wrapper"> 
+        <section class="toolContainer">
+            <div class="toolWrapperOne"> 
                 <h2>Explore Our Tools</h2>
-                <a href="placeholder.html" class="srtbtn">Start Here!</a> <br><br>
+                <!-- Trigger Buttons -->
+                <button class="popup-button" data-popup="popup0">Start Here!</button>
+
+                <!-- Popup 0 -->
+                <div id="popup0" class="popup">
+                    <div class="headed">
+                        <button class="close-btn" onclick="closePopup('popup0')">&times;</button>
+                        <h2>Welcome to Check-the-List</h2>
+                    </div>
+
+                    <h3>Start here</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora corporis veniam ea a esse sed ex unde quae quia pariatur, alias ullam expedita impedit veritatis nam cupiditate voluptatibus minima iste?</p> <br>
+                    <h3>How it Works</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos reiciendis esse repellendus, aliquid incidunt quasi recusandae perferendis repudiandae fuga quia impedit, itaque deserunt assumenda provident consectetur nulla at. Voluptatibus!</p> <br><br><br><br> 
+                </div>
             </div>
 
 
-            <div class="wrapperdivfour">
-                <details class="detspoil" open>
+
+            <div class="toolWrapperTwo">
+                <details class="toolDetailSpoiler" open>
                     <summary>Computer Vulnerability Scanners</summary>
                     <!-- Trigger Buttons -->
                     <button class="popup-button" data-popup="popup1">Patch Scanner</button>
@@ -58,7 +73,7 @@
                             If no updates are found, the script confirms that the system is fully updated. 
                             The tool is useful for maintaining system security by ensuring critical updates are applied in a timely manner.</p> <br><br><br><br>
                             
-                            <a href="../scripts&tools/elisha_updatepatch_scanner.ps1" class="demobtn" download>Download</a> <br>
+                            <a href="../scripts&tools/elisha_updatepatch_scanner.ps1" class="toolBtn" download>Download</a> <br>
                     </div>
 
                     <!-- Popup 2 -->
@@ -80,7 +95,7 @@
                             By using this tool, users can quickly determine if their system has adequate recovery options in place, reducing the risk of data loss 
                             in case of system failure</p> <br><br><br><br>
 
-                            <a href="../scripts&tools/elisha_backupchecker.exe" class="demobtn" download>Download</a> <br>
+                            <a href="../scripts&tools/elisha_backupchecker.exe" class="toolBtn" download>Download</a> <br>
                     </div>
 
                     <!-- Popup 4 -->
@@ -102,7 +117,7 @@
                                 in color for better visibility. Using these outputs, you can quickly assess and improve their system's password security policies,
                                  reducing vulnerabilities related to weak authentication settings.</p> <br><br><br><br>
 
-                                 <a href="../scripts&tools/Password Policy Checker.exe" class="demobtn" download>Download</a> <br>
+                                 <a href="../scripts&tools/Password Policy Checker.exe" class="toolBtn" download>Download</a> <br>
                     </div>                    
                     <!-- Popup 5 -->
                     <div id="popup5" class="popup">
@@ -122,10 +137,10 @@
                             and password change dates to identify stale accounts and enforces rotation, and reviews firewall rules for 
                             misconfigurations like "Allow All Traffic." </p> <br><br><br><br>
 
-                            <a href="../scripts&tools/Baseline Security Check.exe" class="demobtn" download>Download</a> <br>
+                            <a href="../scripts&tools/Baseline Security Check.exe" class="toolBtn" download>Download</a> <br>
                 </details>
     
-                <details class="detspoil" open>
+                <details class="toolDetailSpoiler" open>
                     <summary>Network Vulnerability Scanners</summary>
                     <!-- Trigger Buttons -->
                     <button class="popup-button" data-popup="popup3">Port Scanner</button>
@@ -148,7 +163,7 @@
                         <p>The tool is useful for identifying accessible services on a system, which can help with security assessments and network 
                             troubleshooting. The scan results are displayed in real-time, showing the status of each port.</p> <br><br><br><br>
 
-                            <a href="../scripts&tools/Openport Scanner.exe" class="demobtn" download>Download</a> <br>
+                            <a href="../scripts&tools/Openport Scanner.exe" class="toolBtn" download>Download</a> <br>
                     </div>
                     
                     <!-- Popup 6 -->
@@ -168,7 +183,7 @@
                         <p>This tool helps detect attacks early by spotting unusual login activity and monitoring network threats. 
                              It improves situational awareness, allowing proactive actions like blocking suspicious IPs before an attack succeeds.</p> <br><br><br><br>
 
-                             <a href="../scripts&tools/BruteForceAttemptScanner.exe" class="demobtn" download>Download</a> <br>
+                             <a href="../scripts&tools/BruteForceAttemptScanner.exe" class="toolBtn" download>Download</a> <br>
                     </div>
                     <!-- Popup 7 -->
                     <div id="popup7" class="popup">
@@ -188,7 +203,7 @@
                               affected by the misconfiguration, then if possible, disable the adapter until steps are taken to rectify the affected DNS or
                                NetBios configuration.</p> <br><br><br><br>
 
-                               <a href="../scripts&tools/NetAdapter Scanner.exe" class="demobtn" download>Download</a> <br>
+                               <a href="../scripts&tools/NetAdapter Scanner.exe" class="toolBtn" download>Download</a> <br>
                 </details>
             </div>
         </section>
