@@ -1,18 +1,18 @@
-// buttonTracker.js
+
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM loaded');
     console.log('Current page title:', document.title);
 
-    // Mapping of data-popup values to display names
+
     const popupToDisplayName = {
-        popup0: 'Intro: Start Here',
-        popup1: 'Scanner: Patch Scanner',
-        popup2: 'Scanner: Backup Scanner',
-        popup3: 'Scanner: Password Scanner',
-        popup4: 'Scanner: Baseline Scanner',
-        popup5: 'Scanner: Port Scanner',
-        popup6: 'Scanner: Brute Force Scanner',
-        popup7: 'Scanner: Network Adapter Scanner',
+        popup0: 'Introduction Page',
+        popup1: 'Patch Scanner',
+        popup2: 'Backup Scanner',
+        popup3: 'Password Scanner',
+        popup4: 'Baseline Scanner',
+        popup5: 'Port Scanner',
+        popup6: 'Brute Force Scanner',
+        popup7: 'Network Adapter Scanner',
         popup8: 'Button 8',
         popup9: 'Button 9'
     };
@@ -79,20 +79,18 @@ function trackButtonClick(popupId) {
     console.log(`Tracking button with data-popup: ${popupId}`);
     let recentClicks = JSON.parse(localStorage.getItem('recentClicks')) || [];
 
-    // Check if the popupId is already in the recentClicks list
+
     const existingIndex = recentClicks.indexOf(popupId);
     if (existingIndex !== -1) {
-        // If it exists, remove it from its current position
         console.log(`Popup ${popupId} already in list at index ${existingIndex}, moving to top`);
         recentClicks.splice(existingIndex, 1);
     } else {
         console.log(`Popup ${popupId} not in list, adding as new entry`);
     }
 
-    // Add the popupId to the beginning of the list
     recentClicks.unshift(popupId);
 
-    // Keep only the last 3 entries
+
     if (recentClicks.length > 3) {
         recentClicks = recentClicks.slice(0, 3);
     }

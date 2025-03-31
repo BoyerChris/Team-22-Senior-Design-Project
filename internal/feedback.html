@@ -30,48 +30,73 @@
 
 
                     <form action="submit_feedback.php" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required><br><br>
+                        
+                        <br><h2>Contact information</h2><hr /><br>
+                        
+                        <label for="name">*First Name:</label>
+                        <input type="text" id="name" name="name" style="width: 100%;" required><br><br>
+
+                        <label for="name">*Last Name:</label>
+                        <input type="text" id="name" name="name" style="width: 100%;" required><br><br>
                 
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required><br><br>
+                        <input type="email" id="email" name="email" style="width: 100%;"><br><br>
+
+                        <label for="name">Phone Number:</label>
+                        <input type="text" id="name" name="name" style="width: 100%;"><br><br>
+
+                       
+
+                        <br><br><h2>Please rate the following: 1 - Poor, 10 - Excellent</h2>
                 
-                        <br><br><h2>Please rate the following (1 - Poor, 5 - Excellent)</h2><br>
-                
-                        <label>Quality of Website:</label>
+                        <hr /> <br>
+
+                        <label>*Quality of the Website:</label>
                         <div class="feedbackRating-Group">
-                            <label><input type="radio" name="quality" value="1" required> 1</label>
+                            <label><input type="radio" name="quality" value="1" required>1</label>
                             <label><input type="radio" name="quality" value="2"> 2</label>
                             <label><input type="radio" name="quality" value="3"> 3</label>
                             <label><input type="radio" name="quality" value="4"> 4</label>
                             <label><input type="radio" name="quality" value="5"> 5</label>
-                        </div>
+                            <label><input type="radio" name="quality" value="6"> 6</label>
+                            <label><input type="radio" name="quality" value="7"> 7</label>
+                            <label><input type="radio" name="quality" value="8"> 8</label>
+                            <label><input type="radio" name="quality" value="9"> 9</label>
+                            <label><input type="radio" name="quality" value="10"> 10</label>
+                        </div><br>
             
-                        <label>Quality of Tools:</label>
+                        <label>*Quality of the Scanners:</label>
                         <div class="feedbackRating-Group">
                             <label><input type="radio" name="speed" value="1" required> 1</label>
                             <label><input type="radio" name="speed" value="2"> 2</label>
                             <label><input type="radio" name="speed" value="3"> 3</label>
                             <label><input type="radio" name="speed" value="4"> 4</label>
                             <label><input type="radio" name="speed" value="5"> 5</label>
-                        </div>
+                            <label><input type="radio" name="speed" value="6"> 6</label>
+                            <label><input type="radio" name="speed" value="7"> 7</label>
+                            <label><input type="radio" name="speed" value="8"> 8</label>
+                            <label><input type="radio" name="speed" value="9"> 9</label>
+                            <label><input type="radio" name="speed" value="10"> 10</label>
+                        </div><br>
             
-                        <label>Overall Satisfaction:</label>
+                        <label>*Overall Satisfaction:</label>
                         <div class="feedbackRating-Group">
                             <label><input type="radio" name="satisfaction" value="1" required> 1</label>
                             <label><input type="radio" name="satisfaction" value="2"> 2</label>
                             <label><input type="radio" name="satisfaction" value="3"> 3</label>
                             <label><input type="radio" name="satisfaction" value="4"> 4</label>
                             <label><input type="radio" name="satisfaction" value="5"> 5</label>
-                        </div> 
+                            <label><input type="radio" name="satisfaction" value="6"> 6</label>
+                            <label><input type="radio" name="satisfaction" value="7"> 7</label>
+                            <label><input type="radio" name="satisfaction" value="8"> 8</label>
+                            <label><input type="radio" name="satisfaction" value="9"> 9</label>
+                            <label><input type="radio" name="satisfaction" value="10"> 10</label>
+                        </div> <br>
 
-                        <br><br>
-            
-                
-                        <label for="comments">Additional Comments or Questions:</label><br>
+                        <br><br><h2>Additional Comments</h2><hr /><br>
                         <textarea id="comments" name="comments" rows="10" placeholder="Your comments here..."></textarea><br><br>
                 
-                        <button type="reset"> Submit Feedback </button>
+                        <button type="reset" style="width: 96.5%;"> Submit Feedback </button>
                     </form>
 
 
