@@ -39,7 +39,7 @@
                     </div>
 
                     <h3>Start here!</h3> <hr /> 
-                    <p>This guide will walk you through the process of downloading and running a vulnerability scanner from our website. You'll learn how to interact with the initial popup, complete the awareness module, download the scanner, and run it on your system. Follow the steps below to get started.</p> <br>
+                    <p>This guide will walk you through the process of downloading and running a vulnerability scanner from our website. You'll learn how to interact with the initial popup, complete the awareness module, download the scanner, and run it on your system. Follow the steps below to get started.</p>
                     
                     <h3>Step 1: Select your scanner</h3> <hr /> 
                     <p>When you visit the tools page of the website, select the vulnerability scanner you wish the use. You can do this by simply clicking on the button of the scanner you wish to use as shown on the tools page.</p> 
@@ -48,7 +48,7 @@
                     <p>You will be directed to the awareness module, which provides key information about cybersecurity threats and how the vulnerability scanner works. Read through the material, and then click "Download" when ready.</p> 
                 
                     <h3>Step 3: Run the Scanner</h3> <hr /> 
-                    <p>After the download completes, a notification will typically appear in the top right corner of your browser. Click on the notification or the Downloads icon. Locate the downloaded file, then run the scanner.</p> <br>
+                    <p>After the download completes, a notification will typically appear in the top right corner of your browser. Click on the notification or the Downloads icon. Locate the downloaded file, then run the scanner.</p>
                 
                     <h3>Final Tips</h3> <hr /> 
                     <p>If your operating system requests permission to run the file, select "Yes" or "Allow" to proceed. Follow any additional installation or setup instructions displayed by the scanner. For a complete system check, consider running the scanner as an administrator.</p>
@@ -64,6 +64,8 @@
                         <button class="popup-button" data-popup="popup2">Backup Scanner</button>
                         <button class="popup-button" data-popup="popup3">Password Scanner</button>
                         <button class="popup-button" data-popup="popup4">Baseline Scanner</button>
+                        <button class="popup-button" data-popup="popup5">Sensitive Data Scanner</button>
+                        <button class="popup-button" data-popup="popup6">Inventory Scanner</button>
     
 
 
@@ -75,16 +77,21 @@
                         </div>
 
                         <h3>What is a Patch Scanner?</h3> <hr /> 
-                        <p>This script is designed to check for missing updates on a Windows system, it does this by utilizing already built-in Windows features.
-                            It scans for Windows security updates, cumulative patches, and third-party software updates.
-                             If updates are found, they are displayed and categorized respectively, ensuring clear identification of required patches.
-                              The script runs only with administrative privileges to ensure proper access to update information</p> <br>
+                        <p>Our Patch Scanner is a scanner designed to identify missing updates on a Windows system by leveraging built-in Windows features. It scans for security updates, 
+                            cumulative patches, and third-party software updates, categorizing them for easy identification. This script requires administrative privileges to ensure 
+                            full access to update information, helping maintain system security and performance.</p>
                         
                         <h3>How it Works</h3> <hr /> 
-                        <p> Upon detection of missing updates, the script generates a detailed report listing all pending patches. 
-                            The results are saved in a folder that is created in your C: Drive for reference. 
-                            If no updates are found, the script confirms that the system is fully updated. 
-                            The tool is useful for maintaining system security by ensuring critical updates are applied in a timely manner.</p> <br><br><br><br>
+                        <p>When missing updates are detected, our Patch Scanner generates a detailed report listing all pending patches. It achieves this by leveraging PowerShell's 
+                            capability to retrieve Windows updates and perform additional tasks using the Get-WindowsUpdate command. If no updates are found, the script confirms 
+                            that your system is fully up to date. This scanner helps maintain system security by ensuring critical updates are identified and applied promptly.</p> 
+
+                        <h3>How to Use</h3><hr />
+                        <p>After downloading the Patch Scanner, simply double-click the executable file to run the tool. You will receive a prompt from your computer 
+                            requesting administrative privileges; please confirm this prompt. If you do not receive the prompt, please right-click the executable and 
+                            select "Run as administrator." Once launched, the program runs automatically, scanning your system for any missing Windows updates. When the 
+                            process is complete, you will receive a detailed list of necessary patches, and a file containing this information will be saved for future 
+                            reference on your C: drive.</p> <br>
                             
                             <a href="../Powershell/elisha_updatepatch_scanner.ps1" class="toolBtn" download>Download</a> <br>
                     </div>
@@ -97,16 +104,21 @@
                         </div>
 
                         <h3>What is a Backup Scanner?</h3> <hr /> 
-                        <p>This script checks the system's backup readiness by verifying the status of File History and System Restore.
-                             It ensures that File History, which provides continuous file backups, is enabled, and checks for the availability of System Restore points. 
-                             If either feature is disabled, the script notifies the user and suggests enabling them for added protection. </p><br>
+                        <p>Our Backup Scanner is a scanner that verifies a system's backup readiness by checking the status of File History and System Restore. It ensures that 
+                            File History, which provides continuous file backups, is enabled and confirms the availability of System Restore points. If either feature is 
+                            disabled, the scanner notifies the user and recommends enabling them for enhanced data protection. </p>
 
                         <h3>How it Works</h3> <hr /> 
-                        <p> The results are displayed and then stored in a newly created folder on your C drive. 
-                            This allows users to review their backup settings and take corrective action if needed. 
-                            The script must be run as an administrator to access system settings properly. 
-                            By using this tool, users can quickly determine if their system has adequate recovery options in place, reducing the risk of data loss 
-                            in case of system failure</p> <br><br><br><br>
+                        <p>The scanner accomplishes its scanning by harnessing PowerShell's ability to extract information from the registry using the Get-ItemProperty command.
+                            By using this scanner, users can quickly assess their backup status and take the necessary 
+                            actions to minimize the risk of data loss in the event of a system failure.&zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;  &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;  </p>
+                            
+                        <h3>How to Use</h3><hr />
+                        <p>After downloading the Backup Scanner, double-click the executable file to run it. You will receive a prompt requesting administrative 
+                            privileges—confirm this to proceed. If the prompt does not appear, right-click the executable and select "Run as administrator." The program 
+                            will then run automatically, checking whether File History and System Restore are enabled. Once the scan is complete, you will receive a report 
+                            indicating the status of these backup features. A file containing this information will also be saved on your C: Drive for future reference.</p> <br>
+
 
                             <a href="../PowerShellEXE/BackupChecker.exe" class="toolBtn" download>Download</a> <br>
                     </div>
@@ -119,16 +131,21 @@
                         </div>   
 
                         <h3>What is a Password Scanner?</h3> <hr /> 
-                        <p>This script evaluates the local security policies related to password management on a Windows system.
-                             It retrieves and displays key password security settings, including minimum password length, maximum password age,
-                              password complexity requirements, and account lockout thresholds. </p><br> 
+                        <p>Our Password Scanner is a scanner that evaluates local security policies related to password management on a Windows system. It retrieves and 
+                            displays key password security settings, including minimum password length, maximum password age, password complexity requirements, and 
+                            account lockout thresholds. &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;  &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;</p>
                         
                         <h3>How it Works</h3> <hr />    
-                        <p> The scanner analyzes these settings and provides recommendations
-                               if weak policies are detected, such as enabling password complexity, setting a stronger minimum length, 
-                               or enforcing password expiration. The results are displayed in a structured format, with security warnings highlighted
-                                in color for better visibility. Using these outputs, you can quickly assess and improve their system's password security policies,
-                                 reducing vulnerabilities related to weak authentication settings.</p> <br><br><br><br>
+                        <p> The scanner analyzes your system's password policies and highlights potential weaknesses. If weak settings are detected, it provides 
+                            recommendations such as enabling password complexity, increasing minimum length, or enforcing expiration policies. The results are displayed 
+                            in a structured format, with security warnings highlighted for better visibility. This allows users to quickly assess and strengthen their 
+                            password security to reduce authentication vulnerabilities.</p> 
+
+                        <h3>How to Use</h3><hr />
+                        <p>After downloading the Password Scanner, double-click the executable file to launch it. You will receive a prompt requesting administrative 
+                            privileges—confirm this to proceed. If the prompt does not appear, right-click the executable and select "Run as administrator." The tool will 
+                            then run automatically, analyzing your system’s password settings. Once complete, it will provide a report detailing whether your current 
+                            password policies are sufficient, along with recommendations for improvement.</p> <br>
 
                                  <a href="../PowershellEXE/Password Policy Checker.exe" class="toolBtn" download>Download</a> <br>
                     </div>                    
@@ -140,17 +157,78 @@
                         </div>   
                          
                         <h3>What is a Baseline Scanner?</h3> <hr /> 
-                        <p> This scanner helps prevent ransomware,
-                            breaches, and unauthorized access by identifying security gaps. It strengthens SMB security by automating checks, supports compliance with standards like NIST, 
-                            and enables proactive threat prevention. By scanning regularly, you can ensure the ongoing protection of your assets</p><br> 
+                        <p>Our Baseline Scanner is a security tool designed to identify vulnerabilities that could lead to ransomware attacks, data breaches, or 
+                            unauthorized access. It strengthens small and medium-sized business (SMB) security by automating critical security checks, supporting 
+                            compliance with industry standards like NIST, and enabling proactive threat prevention. Regular scans help ensure the ongoing protection 
+                            of your systems and data.</p>
                         
                         <h3>How it Works</h3> <hr />     
-                        <p>This scanner automates security checks and exports findings to a CSV file.
-                            It checks if Remote Desktop Protocol (RDP) is enabled, a common attack vector, and retrieves local user accounts
-                            and password change dates to identify stale accounts and enforces rotation, and reviews firewall rules for 
-                            misconfigurations like "Allow All Traffic." </p> <br><br><br><br>
+                        <p>The scanner automates security assessments and exports the findings for easy review. This scanner checks many things, such as whether Remote Desktop Protocol (RDP) is 
+                            enabled—a common attack vector—retrieves local user accounts and password change dates to identify and enforce password 
+                            rotation, and reviews firewall rules for misconfigurations such as "Allow All Traffic." These insights help enhance system security by 
+                            addressing critical vulnerabilities." </p>
+                        
+                        <h3>How to Use</h3><hr />
+                        <p>After downloading the Baseline Scanner, double-click the executable file to launch it. You will receive a prompt requesting administrative 
+                            privileges—confirm this to proceed. If the prompt does not appear, right-click the executable and select "Run as administrator." The tool will 
+                            then run automatically, analyzing key security settings. Once the scan is complete, you will receive a detailed report outlining the status of 
+                            various baseline security configurations, along with a CSV file containing the full results for future reference.</p> <br>
 
                             <a href="../PowershellEXE/Baseline Security Check.exe" class="toolBtn" download>Download</a> <br>
+                    </div>
+                    <!-- Popup 5 -->
+                    <div id="popup5" class="popup">
+                        <div class="headed">    
+                            <button class="close-btn" onclick="closePopup('popup5')">&times;</button>
+                            <h2>Sensitive Data Scanner</h2>
+                        </div>   
+                         
+                        <h3>What is a Sensitive Data Scanner?</h3> <hr /> 
+                        <p>Our Sensitive Data Scanner helps prevent potential data breaches by identifying vulnerabilities in the storage of sensitive information. It scans 
+                            files for various types of data, such as credit card numbers, Social Security numbers, and personal identification details. By ensuring 
+                            compliance with standards like NIST (National Institute of Standards and Technology), it helps protect against unauthorized access and reduces 
+                            the risk of data theft and ensures that sensitive data is stored securely.</p>
+                        
+                        <h3>How it Works</h3> <hr />     
+                        <p>The scanner performes security checks on a specified file path by reading files within the directory and analyzing them for specific patterns 
+                            indicative of sensitive information. Once detected, the scanner alerts you to any issues, allowing you to take action to secure the data. This 
+                            process helps identify improperly stored information, such as personal or financial data, ensuring better data protection across your systems. </p> 
+
+                        <h3>How to Use</h3><hr />
+                        <p>After downloading the Sensitive Data Scanner, double-click the executable file to launch it. You will receive a prompt requesting administrative 
+                            privileges—confirm this to proceed. If the prompt does not appear, right-click the executable and select "Run as administrator." Once started, 
+                            the program will prompt you to enter a file path for scanning—it is recommended to choose individual files or small directories for optimal 
+                            performance. The scan will then run automatically, and upon completion, you will receive a detailed report highlighting any sensitive data 
+                            alerts.</p> <br>
+
+                            <a href="../PowershellEXE/Find Sensitive Data.exe" class="toolBtn" download>Download</a> <br>
+                    </div>
+                    <!-- Popup 6 -->
+                    <div id="popup6" class="popup">
+                        <div class="headed">    
+                            <button class="close-btn" onclick="closePopup('popup6')">&times;</button>
+                            <h2>Inventory Scanner</h2>
+                        </div>   
+                         
+                        <h3>What is a Inventory Scanner?</h3> <hr /> 
+                        <p>Our Inventory Scanner is a scanner designed to identify both hardware and software installed on a target system. By gathering detailed information 
+                            about the system’s components, the scanner helps pinpoint outdated or potentially vulnerable software and hardware. This enables users to 
+                            identify older programs or outdated hardware that may need updating or replacement, allowing them to take corrective action and ensure optimal 
+                            system performance and security.</p>
+                        
+                        <h3>How it Works</h3> <hr />     
+                        <p>The scanner automates the process of collecting system information by scanning both hardware and software components on the PC. It organizes and displays 
+                            the results in a clear format, allowing the user to easily review the data. This helps identify any outdated software or hardware that may need attention, 
+                            ensuring that your system remains up-to-date and secure. &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;</p>
+
+                        <h3>How to Use</h3><hr />
+                        <p>After downloading the Inventory Scanner, double-click the executable file to launch it. You will receive a prompt requesting administrative 
+                            privileges—confirm this to proceed. If the prompt does not appear, right-click the executable and select "Run as administrator." Once started, 
+                            it will run automatically. Upon completion, you will be provided with a detailed report displaying information on the various hardware and software 
+                            installed on your PC, along with their configurations.</p> <br>
+
+                            <a href="../PowershellEXE/Software and Hardware Inventory.exe" class="toolBtn" download>Download</a> <br>
+                    </div>
                 </details>
     
 
@@ -160,67 +238,85 @@
                 <details class="toolDetailSpoiler" open>
                     <summary>Network Vulnerability Scanners</summary>
                         <!-- Trigger Buttons -->
-                        <button class="popup-button" data-popup="popup5">Port Scanner</button>
-                        <button class="popup-button" data-popup="popup6">Brute Force Scanner</button>
-                        <button class="popup-button" data-popup="popup7">Network Adapter Scanner</button>
+                        <button class="popup-button" data-popup="popup7">Port Scanner</button>
+                        <button class="popup-button" data-popup="popup8">Brute Force Scanner</button>
+                        <button class="popup-button" data-popup="popup9">Network Adapter Scanner</button>
 
 
                     
-                    <!-- Popup 5 -->
-                    <div id="popup5" class="popup">
+                    <!-- Popup 7 -->
+                    <div id="popup7" class="popup">
                         <div class="headed">
-                            <button class="close-btn" onclick="closePopup('popup5')">&times;</button>
+                            <button class="close-btn" onclick="closePopup('popup7')">&times;</button>
                             <h2>Port Scanner</h2>
                         </div>    
                         
                         <h3>What is a Port Scanner?</h3> <hr /> 
-                        <p>This script scans your system searching for ports that have been left open, such as FTP, SSH, HTTP, and RDP. 
-                            It systematically attempts to establish a connection with each port and reports whether it is open or closed. 
-                            If a port is open, the script confirms connectivity and then closes the connection. </p><br>
+                        <p>Our Port Scanner is a tool that scans your system for open ports, such as FTP, SSH, HTTP, and RDP. The script attempts to establish a connection 
+                            with each port, then reports whether the port is open or closed. If a port is found to be open, the script confirms the connection and promptly 
+                            closes it, helping identify any vulnerabilities due to exposed ports.&zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;</p>
 
                         <h3>How it Works</h3> <hr /> 
-                        <p>The tool is useful for identifying accessible services on a system, which can help with security assessments and network 
-                            troubleshooting. The scan results are displayed in real-time, showing the status of each port.</p> <br><br><br><br>
+                        <p>The Port Scanner is essential for identifying accessible services on your system, which can aid in security assessments and network 
+                            troubleshooting. It performs a systematic scan of all relevant ports, displaying real-time results that show the status of each port 
+                            (open or closed). This enables users to identify any open ports that may need to be secured.&zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;&zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;</p>
+
+                        <h3>How to Use</h3><hr />
+                        <p>After downloading the Port Scanner, double-click the executable file to launch it. You will receive a prompt requesting administrative 
+                            privileges—confirm this to proceed. If the prompt does not appear, right-click the executable and select "Run as administrator." Once started, 
+                            it will run automatically. Upon completion, you will be provided with a detailed report displaying information on the various open ports on your PC, along with their configurations.</p> <br>
 
                             <a href="../PowershellEXE/Openport Scanner.exe" class="toolBtn" download>Download</a> <br>
                     </div>
                     
-                    <!-- Popup 6 -->
-                    <div id="popup6" class="popup">
+                    <!-- Popup 8 -->
+                    <div id="popup8" class="popup">
                         <div class="headed">     
-                            <button class="close-btn" onclick="closePopup('popup6')">&times;</button>
+                            <button class="close-btn" onclick="closePopup('popup8')">&times;</button>
                             <h2>Brute Force Scanner</h2>
                         </div>    
 
                         <h3>What is a Brute Force Scanner?</h3> <hr /> 
-                        <p>This script performs two key security checks. It scans for failed login attempts in the last 30 minutes, 
-                            identifying potential brute-force attacks by tracking repeated failures per user. 
-                            It also monitors active network connections, detecting suspicious or unknown IP addresses. 
-                            The script flags IPs with excessive connections, which could indicate an intrusion or system overload attempt.</p><br>
+                        <p>Our Brute Force Scanner is a security tool designed to detect potential brute-force attacks and suspicious network activity. It monitors 
+                            failed login attempts within the last 30 minutes, identifying repeated failures that could indicate an attempted intrusion. Additionally, 
+                            it tracks active network connections and flags unknown or excessive connections from specific IP addresses, which may signal a security 
+                            threat or system overload attempt.</p>
 
                         <h3>How it Works</h3> <hr /> 
-                        <p>This tool helps detect attacks early by spotting unusual login activity and monitoring network threats. 
-                             It improves situational awareness, allowing proactive actions like blocking suspicious IPs before an attack succeeds.</p> <br><br><br><br>
+                        <p>This scanner enhances security by identifying unusual login activity and monitoring network threats in real-time. By detecting patterns of 
+                            repeated failed logins and excessive network connections, it helps users take proactive security measures, such as blocking suspicious IPs or 
+                            strengthening authentication controls. Early detection of these threats can prevent unauthorized access and protect system integrity.</p>
 
+                        <h3>How to Use</h3><hr />
+                        <p>After downloading the Brute Force Scanner, double-click the executable file to launch it. You will receive a prompt requesting administrative 
+                            privileges—confirm this to proceed. If the prompt does not appear, right-click the executable and select "Run as administrator." The scanner 
+                            will then run automatically. Once completed, it will provide a detailed report of failed login attempts and suspicious IP addresses, flagging 
+                            potentially harmful connections for future reference.</p> <br>
+     
                              <a href="../PowershellEXE/BruteForceAttemptScanner.exe" class="toolBtn" download>Download</a> <br>
                     </div>
-                    <!-- Popup 7 -->
-                    <div id="popup7" class="popup">
+                    <!-- Popup 9 -->
+                    <div id="popup9" class="popup">
                         <div class="headed">     
-                            <button class="close-btn" onclick="closePopup('popup7')">&times;</button>
+                            <button class="close-btn" onclick="closePopup('popup9')">&times;</button>
                             <h2>Network Adapter Scanner</h2>
                         </div>
 
                         <h3>What is a Network Adapter Scanner?</h3> <hr /> 
-                        <p>This script scans your systems network adapters for their NetBios and DNS configurations.
-                             It retrieves and displays the aforementioned configurations for each adapter your system possesses, determining along the
-                              way if the configuration found was “Risky” or “Secure”. </p><br> 
+                        <p>A Network Adapter Scanner is a security tool designed to analyze your system’s network adapters for their NetBIOS and DNS configurations. 
+                            It retrieves and displays these settings for each adapter and assesses whether the configurations are classified as “Risky” or “Secure.” 
+                            By identifying misconfigurations, this tool helps users detect potential vulnerabilities that could expose their system to cyber threats. </p>
                     
                         <h3>How it Works</h3> <hr />      
-                        <p> This scanner is useful for finding attack vectors resulting from 
-                              poor network adapter configuration. Upon detection of a “Risky” setting, the end user should take note of the adapter 
-                              affected by the misconfiguration, then if possible, disable the adapter until steps are taken to rectify the affected DNS or
-                               NetBios configuration.</p> <br><br><br><br>
+                        <p> This scanner is essential for detecting attack vectors caused by improper network adapter settings. It achieves this by leveraging PowerShell's 
+                            capability to retrieve information from network adapters and the registry using the Get-NetAdapterAdvancedProperty and Get-DnsClientServerAddress commands. 
+                            Ensuring secure configurations helps reduce the risk of unauthorized access or data exposure through network misconfigurations.</p>
+
+                        <h3>How to Use</h3><hr />
+                        <p>After downloading the Network Adapter Scanner, double-click the executable file to launch it. You will receive a prompt requesting 
+                            administrative privileges—confirm this to proceed. If the prompt does not appear, right-click the executable and select "Run as administrator." 
+                            The scanner will then run automatically. Once completed, it will generate a detailed report listing all network adapters, highlighting any 
+                            misconfigurations, and indicating whether their settings are secure or need attention. If a “Risky” configuration is detected, users are advised to take note of the affected adapter and, if possible, disable it until corrective actions can be taken.</p> <br>
 
                                <a href="../PowershellEXE/NetAdapter Scanner.exe" class="toolBtn" download>Download</a> <br>
                 </details>

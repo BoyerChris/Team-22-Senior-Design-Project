@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
         popup2: 'Backup Scanner',
         popup3: 'Password Scanner',
         popup4: 'Baseline Scanner',
-        popup5: 'Port Scanner',
-        popup6: 'Brute Force Scanner',
-        popup7: 'Network Adapter Scanner',
-        popup8: 'Button 8',
-        popup9: 'Button 9'
+        popup5: 'Sensitive Data Scanner',
+        popup6: 'Inventory Scanner',
+        popup7: 'Port Scanner',
+        popup8: 'Brute Force Scanner',
+        popup9: 'Network Adapter Scanner'
     };
 
     if (document.title === 'Check-The-List - Cybersecurity Hardening') {

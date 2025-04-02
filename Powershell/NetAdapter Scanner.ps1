@@ -32,8 +32,6 @@ function Get-NetworkAdapterSecurityReport
 	$netbiosStatus = if ($netbiosEnabled -eq 1) { 'Enabled (Risky)' } elseif ($netbiosEnabled -eq 0) { 'Disabled (Secure)' } else { 'Not Available (Secure)' }
 
 
-
-
         # Return messaging per adapter
         Write-Host "Network Adapter Name: $adapterName" -ForegroundColor Blue
         Write-Host "DNS Status: $dnsStatus"
